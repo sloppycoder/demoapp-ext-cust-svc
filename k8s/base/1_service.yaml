@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: gcr.io/vino9-276317/demo-bank/ext-cust-svc
+          image: gcr.io/vino9-276317/demoapp/ext-cust-svc
           ports:
             - containerPort: 8080
               protocol: TCP
