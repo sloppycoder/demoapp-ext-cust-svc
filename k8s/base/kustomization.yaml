@@ -1,3 +1,4 @@
 resources:
   - 3_service.yaml
-
+  - 4_ingress.yaml
+  - 5_peerauthentication.yaml

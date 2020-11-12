@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ext-cust-svc
+  annotations:
+    konghq.com/strip-path: "true"
+    konghq.com/preserve-host: "false"
+    kubernetes.io/ingress.class: "kong"
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /ext-cust-svc
+        backend:
+          serviceName: ext-cust-svc
+          servicePort: http

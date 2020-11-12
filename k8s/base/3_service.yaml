@@ -23,6 +23,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ext-cust-svc
+  annotations:
+    ingress.kubernetes.io/service-upstream: "true"
   labels:
     app: ext-cust-svc
     service: ext-cust-svc
